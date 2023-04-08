@@ -1,144 +1,249 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
+
+
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="iescobill, mepcobill, pescobill, hescobill, sepcobill, qescobill, gepcobill, fescobill, tescobill" />
+    <meta name="description" content="Consumer electricity bills" />
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+    <title>MEPCO Web Bill</title>
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet" type="text/css">
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
 
-#siteNavigation .current { background-color: #ccd; }
+    <style type="text/css">
+        .nav-bdr {
+            border-bottom: 2px solid brown;
+        }
+        .bg-brown {
+            background-color: brown;
+        }
+    </style>
 
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
 
+            document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
 
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
+                everydropdown.addEventListener('shown.bs.dropdown', function () {
+                    el_overlay = document.createElement('span');
+                    el_overlay.className = 'screen-darken';
+                    document.body.appendChild(el_overlay)
+                });
 
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
+                everydropdown.addEventListener('hide.bs.dropdown', function () {
+                    document.body.removeChild(document.querySelector('.screen-darken'));
+                });
 
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
+            });
 
+        });
+                        // DOMContentLoaded  end
+    </script>
 
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
-</style>
-
+    <link rel="stylesheet" href="/styles/extra_pages.css">
 </head>
+<body>
+    
+    <header class="section-header fixed-top bg-white">
+        <!-- ============= COMPONENT ============== -->
+        <nav class="navbar navbar-expand-lg navbar-dark nav-bdr">
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+            <div class="container-fluid">
+                <div id="logo" class="pad5 wh80">
+                    <img class="maxWH100 " src="/images/companies/mepco/mepcoLogo.png" alt="MEPCO Logo">
+                </div>
+
+                <div id="title">
+                    <a class="navbar-brand color-brown ml-1r" href="#">
+                        <div class="fs-title">
+                            MEPCO Web Bill
+                        </div>
+                        <sub class="sub">
+                            Powered by PITC
+                        </sub>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler bg-brown" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="main_nav">
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link color-brown onhover-burlywood" href="/index"><b>Home </b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-brown onhover-burlywood" href="http://www.mepco.com.pk/">
+                                <b>Visit Us</b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-brown onhover-burlywood" href="http://www.pitc.com.pk/">
+                                <b>Service Provider</b>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse.// -->
+            </div>
+            <!-- container-fluid.// -->
+
+        </nav>
+        <!-- ============= COMPONENT END// ============== -->
+    </header>
+    
+
+    <section class="section-content pad-t-6rem mb-5">
+        <h4 class="text-center py-4 color-saddle-brown">MEPCO BILL </h4>
+        <div class="container" style="max-width: 600px">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            Search Your Electricity Bill
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="./mepcobill" onsubmit="javascript:return WebForm_OnSubmit();" id="SubmitForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="x4VXNSFbTXm60QE/BLIjL9JahlWAma77EIMLGysK55tzBh7AVJnEfIHYrIqjJWdEBT9ydHQc2kLSz08J6jGdA1UwEaluQ0VaS4wkNYLJdpTsNyoOKS4BZR0Y+3He/UmLAlZAWwdbyEL+H9qt/hTT2vSmc10XH4AERHExur9YByCXedIKeh3HEIJUWmVApqFA+Pnj2ULuLZdVxWScZ42/FQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['SubmitForm'];
+if (!theForm) {
+    theForm = document.SubmitForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZB2TZyKHsWKWXmVeWdRB2J-iO8IvCxVs44xX_m3XsXYY3NWwgKE_tFjrxmQmRwmFJA2&amp;t=637814840020000000" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=x2nkrMJGXkMELz33nwnakBm6ZNUDGeWcgOJ-R76u1l2y-WCt4J7360_une782I5wuh1W1l4AEgOfmXEfXTIw3Q_SugIHV6kKrUdkvzhf3oA1&amp;t=637814840020000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2CDA38AB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="zejZ/3iH2mlyWs5Z5RXESZ/h2FRroVPAjaN8xp9NoKszrosPuJ2vM0ETZCVeJliATd9aIoqyRb+bPU5sGF4HvK3ek4DpbhPRhh+v6eSN7+/UpeM1zeCNgBkBibY72OHPrmqh72AAPuYmWtqoO/X7CP97IUKkXWZFVbcOCFA6SKZkh+idfNLbTUqL9CpAfgV6f9cs6oFEbd4jzZEmczlSR+yp4oE2R8cEoniGH//lwLn9sBuQjcZrq2tfy7TYsQfK" />
+</div>
+                                <div class="input-group mb-3">
+                                    <table id="rbSearchByList">
 	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+		<td><input id="rbSearchByList_0" type="radio" name="rbSearchByList" value="refno" checked="checked" /><label for="rbSearchByList_0"> Reference No</label></td>
+	</tr><tr>
+		<td><input id="rbSearchByList_1" type="radio" name="rbSearchByList" value="appno" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;rbSearchByList$1\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="rbSearchByList_1"> Customer ID</label></td>
 	</tr>
 </table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+                                    <input name="searchTextBox" type="text" maxlength="14" size="16" id="searchTextBox" class="form-control" placeholder="Enter 14-digit valid reference no" style="font-size: 18px; padding: 5px; margin-right: 15px; margin-left: 15px;" />
+                                    <span id="RequiredFieldValidator1" title="This field is required" style="color:Red;display:none;">*</span>
+                                    <select name="ruCodeTextBox" id="ruCodeTextBox" style="padding-left:8px; background-color: #fff; border: 1px solid #ced4da; max-width: 65px">
+	<option value="">U</option>
+	<option value="R">R</option>
 
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="demo.justfreewpthemes.com/index65fd.html">
-						JustFreeWPThemes Root Demo
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=demo.justfreewpthemes.com/index65fd.html">
+</select>  
+
+                                    
+
+                                    
+                                    <input name="__RequestVerificationToken" type="hidden" value="Y_hOaxsTXWBOMEjd6qeaQCCeqBGGSA-1DLJpYltcVWzT8Y5TOjqCSzRLelo6BKYQ5Ln2gO0YKue1AIJKCYW-M5oxhb8uWwioirKXZqm7Vp81" />
+                                </div>
+                                <span id="RegularExpressionValidator2" class="mb-3" style="color:Red;display:none;">Given Ref/App No is invalid</span>
+                                <div id="ua" class="mb-3 color-red"></div>
+                                <input type="submit" name="btnSearch" value="Search" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="btnSearch" class="auto-center btn btn-secondary" style="font-size: 14px; padding: 5px; width: 75px;" />
+                            
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("RequiredFieldValidator1"), document.getElementById("RegularExpressionValidator2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+RequiredFieldValidator1.controltovalidate = "searchTextBox";
+RequiredFieldValidator1.focusOnError = "t";
+RequiredFieldValidator1.errormessage = "*";
+RequiredFieldValidator1.display = "Dynamic";
+RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+RequiredFieldValidator1.initialvalue = "";
+var RegularExpressionValidator2 = document.all ? document.all["RegularExpressionValidator2"] : document.getElementById("RegularExpressionValidator2");
+RegularExpressionValidator2.controltovalidate = "searchTextBox";
+RegularExpressionValidator2.errormessage = "Given Ref/App No is invalid";
+RegularExpressionValidator2.display = "Dynamic";
+RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+RegularExpressionValidator2.validationexpression = "^\\d{10,14}$";
+//]]>
+</script>
 
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+<script type="text/javascript">
+//<![CDATA[
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
 
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="bg-dark-brown text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center color-light-grey">
+                    Copyright © 2021 Power Information Technology Company - PITC, All Rights Reserved.
+                </div>
+            </div>
+        </div>
+        <!--end of container-->
+    </footer>
+    <!-- footer end -->
 </body>
-
 </html>
-
-
